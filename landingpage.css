@@ -1,0 +1,65 @@
+body {
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+.heading {
+  height: 300px;
+  font-size: 30px;
+  line-height: 20px;
+  position: relative;
+  animation-name: heading;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes heading {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 250px;
+  }
+}
+.second {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 30px;
+  animation-name: para;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+.second p {
+  font-size: 25px;
+}
+@keyframes para {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0;
+  }
+}
+.btn {
+  padding: 9px 18px;
+  margin-top: 15px;
+  color: blue;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid white;
+  display: inline-block;
+  opacity: 0;
+  animation-name: click;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes click {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
